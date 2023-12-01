@@ -1,6 +1,6 @@
 # popclip-extension-GPT-assistant
 
-This extension provides 3 functions: polishing, summary, and code explanation
+This extension provides 3 functions with ChatGPT: polishing, summary, and code explanation
 
 - Polishing: discover and correct spelling errors and improve text expression
 - Summary: extract a summary of a piece of text
