@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>PopClipGPTAssistant</string>
+    <key>icon</key>
+    <string>assets/sparkles-icon.svg</string>
+    <key>identifier</key>
+    <string>com.fox.popclip.extension.gpt.assistant</string>
+    <key>description</key>
+    <string>Send the selected text to ChatGPT and append the response.</string>
+    <key>PopClipGPTAssistantVersion</key>
+    <integer>1000</integer>
+    <key>interpreter</key>
+    <string>python3</string>
+    <key>entitlements</key>
+    <array>
+        <string>network</string>
+    </array>
+    <key>options</key>
+    <array>
+        <dict>
+            <key>identifier</key>
+            <string>apikey</string>
+            <key>label</key>
+            <string>API Key</string>
+            <key>type</key>
+            <string>string</string>
+            <key>description</key>
+            <string>Obtain an API key from: https://platform.openai.com/account/api-keys</string>
+        </dict>
+        <dict>
+            <key>identifier</key>
+            <string>baseurl</string>
+            <key>label</key>
+            <string>Base URL</string>
+            <key>type</key>
+            <string>string</string>
+            <key>description</key>
+            <string>https://api.openai.com</string>
+        </dict>
+        <dict>
+            <key>Option Identifier</key>
+            <string>model</string>
+            <key>Option Label</key>
+            <string>Model</string>
+            <key>Option Default Value</key>
+            <string>gpt-3.5-turbo</string>
+            <key>Option Type</key>
+            <string>multiple</string>
+            <key>Option Values</key>
+            <array>
+                <string>gpt-3.5-turbo</string>
+                <string>gpt-3.5-turbo-0613</string>
+                <string>gpt-3.5-turbo-16k</string>
+                <string>gpt-4</string>
+                <string>gpt-4-0613</string>
+                <string>gpt-4-32k</string>
+                <string>gpt-4-32k-0613</string>
+            </array>
+        </dict>
+        <dict>
+            <key>Option Identifier</key>
+            <string>lang</string>
+            <key>Option Label</key>
+            <string>GPT Response Language</string>
+            <key>Option Default Value</key>
+            <string>Chinese</string>
+            <key>Option Type</key>
+            <string>multiple</string>
+            <key>Option Values</key>
+            <array>
+                <string>Chinese</string>
+                <string>English</string>
+                <string>French</string>
+                <string>German</string>
+            </array>
+        </dict>
+    </array>
+    <key>Actions</key>
+	<array>
+		<dict>
+			<key>After</key>
+			<string>show-status</string>
+			<key>icon</key>
+			<string>assets/polish-icon.svg</string>
+            <key>Shell Script File</key>
+            <string>polish.py</string>
+			<key>Title</key>
+			<string>Polish</string>
+		</dict>
+		<dict>
+			<key>After</key>
+			<string>show-status</string>
+			<key>icon</key>
+			<string>assets/summary-icon.svg</string>
+            <key>Shell Script File</key>
+            <string>summarize.py</string>
+			<key>Title</key>
+			<string>Summarize</string>
+		</dict>
+		<dict>
+			<key>After</key>
+			<string>show-status</string>
+			<key>icon</key>
+			<string>assets/code-icon.svg</string>
+            <key>Shell Script File</key>
+            <string>explaincode.py</string>
+			<key>Title</key>
+			<string>Code Explain</string>
+		</dict>
+	</array>
+</dict>
+</plist>
