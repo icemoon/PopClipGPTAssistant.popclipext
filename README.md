@@ -6,6 +6,10 @@ This extension provides 3 functions with ChatGPT: polishing, summary, and code e
 - Summary: extract a summary of a piece of text
 - Code explanation: explain the function of a piece of code and point out code bugs
 
+## Language
+
+support Chinese, English, French, German
+
 ## Setting
 
 ![image-settings](images/image-settings.png)
